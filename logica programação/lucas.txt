@@ -1,0 +1,136 @@
+1-alert("oi meu nome é lucas")
+
+
+
+2-let parabens = ", parabens" 
+        let dados = prompt("digite a opção que voÇe gostaria\n listar funcionários\nEditar funcionários\ndeletar funcionário \nSair ")
+        alert("voÇe escolheu " + dados + parabens)
+        console.log("listar funcionários\nEditar funcionários\ndeletar funcionário\nSair")
+
+
+
+3- let nome = "joão"
+        let admin = nome
+        console.log(nome)
+
+
+
+4-let info = prompt("digite seu nome")
+        let info2 = prompt("idade") //Nome do individuo
+        let info3 = prompt("peso") //Peso do cidadão
+        let info4 = prompt("altura") //Altura da criatura
+        let info5 = prompt("numero de telefone") //Meio de entrar em contato com esse ser humano
+        console.log("nome: " + info + " idade: " + info2) /* Organização das
+        console.log("peso: " + info3 + " altura: " + info4) informações e como elas
+        console.log("telefone: " + info5) aparecerão no console*/
+
+
+5-let titulo = "RobinsonCrusue" // Titulo da obra
+        let edição = "EdiçãoDEbolso" // Edição da obra
+        let autor = "DanielDeffoe" // Autor da obra
+        let dataPublicado = "1719" // Data de publicação
+        let info = (" \ntitulo: " + titulo + " \nEdição: " + edição +  " \nAutor: " + autor +  " \nDataDePublicação" + dataPublicado) //Meio para acessar as informações
+
+
+6-let datadenascimento = "25/02/2000" //Ano em que nasceu
+        let parentalidade = "0" //Quantos filhos possui
+        let user = "lucas" // Quem está logado no sistema
+        let info = (user + " não possui filhos nascido no ano de" + datadenascimento // Compilado das informações do usuario 
+
+
+7-let nome = "João" // Definiu-se "joão" como variável "nome"
+     console.log(`Olá ${1}`) // Fará aparecer no console a seguinte frase " olá 1 "
+     console.log(`Olá ${"nome"}`) // Fará aparecer no console "olá nome"
+     alert(`Olá ${nome}`) // Fará aparecer na tela, para o usuária, a frase "olá joão"         
+
+
+     8) Considerando o seguinte script:
+    let x = 10
+    let y = 8
+    let area = (x * y) / 2 + 3 ** 4
+    console.log(area)
+Qual é a saida de dados (output)?  // a saida dos dados é a representação numérica referente a área, ou seja, 121
+
+9) Quais são os valores de a e x que serão exibidos no console
+let a = 2
+let x = 1 + (a *= 2)
+console.log(a, x) // 4 5
+
+10) Qual é o resultado de cada operação? 
+    A) "" + 1 + 0 // 10
+    B) "" - 1 + 0 // -1
+    C) 6 / "3" // 2
+    D) "2" * "3" // 6
+    E) 4 + 5 + "px" // 9px
+    F) "$" + 4 + 5 // $45
+    G) "4" - 2 // 2
+
+
+11) let x = Number(prompt("largura"))
+        let y = Number(prompt("altura"))
+        let perímetro = x+x+y+y
+        let área = x*y
+        alert("área igual a " + área + "\nperímetro igual a " + perímetro)
+
+
+12) let x = Number(prompt("primeiroNumero"))
+        let y = Number(prompt("SegundoNumero"))
+        let resultado = x+y
+        alert("a some dos dois valores é: " + resultado)
+
+
+13) let x = Number(prompt("NOTA1"))
+        let y = Number(prompt("NOTA2"))
+        let Z = (x+y)/2
+        
+        alert("sua média é: " + Z)
+
+14)  let x = prompt("N1")
+        let y = prompt("N2")
+        let Z = prompt("N3")
+        let res1 = x**2
+        let res2 = y**2
+        let res3 = Z**2
+        alert(res1 + ", "  + res2 + ", " + res3)
+
+15)   let A = 10
+        let B = 20
+        let aux = 0
+        aux = A
+        A = B
+        B = aux              
+
+16) let QTDmeses = prompt("numero de meses") // quantidade de meses indicado pelo usario
+        let QTDdias = QTDmeses * 30 
+        alert("Dias decorridos: " + QTDdias) //
+
+17)let n10 = Number(prompt("insira um numero"))
+        let res = n10-1 
+        let res2 = n10+1
+        alert(res + ", " + n10 + ", " + res2)
+
+18) let R = Number(prompt("insira o raio da esfera"))
+        let R2 = 4/3 * 3.14159 * (R * 3)
+        alert(R2.to.Fixed(2))
+        alert("o volume da esfera é: " + R2)
+
+
+ 19) let B = Number(prompt("Base do triângulo"))
+         let H = Number(prompt("Altura do triângulo"))
+         let Area = B * H / 2 
+         alert("Área do triângulo é: " + Area)
+
+ 20) let valor = Number(prompt("valor do produto"))
+         let desconto = Number(prompt("porcentagem de desconto"))
+         let valordesconto = valor * (desconto / 100)
+         let valorapagar = valor - valordesconto
+         alert("valor a pagar: " + valorapagar + "\n" + "valor do desconto: " + valordesconto) 
+                        
+21) let nome = prompt("nome do funcionário")
+        let sal = Number(prompt("salário fixo do funcionário"))
+        let vendas = Number(prompt("valor de vendas mensal"))
+        let totaldevendas = vendas * (15/100)
+        let salariofinal = totaldevendas + sal 
+        console.log(salariofinal.toFixed(2))
+        alert("nome: " + nome + "\n" + "salario no fim do mes: " + salariofinal)
+         
