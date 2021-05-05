@@ -46,4 +46,144 @@ console.log(null || 2 || undefined) // undefined
 Boolean(0 && 1) // undefined
 
 
+8)let n1 = Number(prompt("insira um numero"))
+        let n2 = Number(prompt("insira um numero"))
+        let n3 = Number(prompt("insira um numero"))
+        if (n1 >= n2 && n1 >= n3) { alert(n1)
+        } else if (n2 >= n1 && n2 >= n3) { alert(n2)
+        } else { alert(n3) }
+
+9) a + b < 4 ? alert("abaixo") : alert("acima")
+
+10)let lado1 = Number(prompt("digita um lado do triangulo"))
+        let lado2 = Number(prompt("digita outro lado do triangulo"))
+        let lado3 = Number(prompt("digita o terceiro  lado do triangulo"))
+        if (lado1 == lado2 && lado1 == lado3) alert("equilátero")  
+         else if (lado1 == lado2 || lado1 == lado3 || lado2 == lado3) alert("isósceles")
+        else alert("escaleno")
+
+11)        let numero = Number(prompt("insira um numero"))
+        if (numero > 0) alert(Math.sqrt(numero)) 
+        else alert("numero invalido")
+
+12)let numero = Number(prompt("insira um numero"))
+        if (numero > 0) alert(Math.sqrt(numero))
+        else alert(numero ** 2)
+
+13)et salario = Number(prompt("insira o valor do deu salário"))
+        let prestacao = Number(prompt("insira o valor da prestação"))
+        if (prestacao > salario / 5) alert("empréstimo não concedido")
+        else alert("empréstimo concedido")
+                
+14)    <script>
+         let numero = Number(prompt("insira um numero de 1 a 7"))
+         switch (numero) {
+         case 1: alert("segunda") 
+         break       
+         case 2: alert("terça") 
+         break
+         case 3: alert("quarta")
+         break
+         case 4: alert("quinta")
+         break
+         case 5: alert("sexta")
+         break
+
+         case 6: alert("sabado")
+         break
+         case 7: alert("domingo")
+         break
+         default : alert("1 a 7 ") }
+                      
+
+
+15) let numero = Number(prompt("insira um numero de 1 a 12"))
+         switch (numero) {
+         case 1: alert("janeiro") 
+         break       
+         case let numero = Number(prompt("insira um numero de 1 a 12"))
+         switch (numero) {
+         case 1: 
+                alert("janeiro") 
+            break       
+         case 2: 
+                alert("fevereiro") 
+            break
+         case 3: 
+                alert("março")
+             break
+         case 4:
+                alert("abril")
+            break
+         case 5: 
+                alert("maio")
+            break
+
+         case 6:
+                alert("junho")
+            break
+         case 7: 
+                alert("julho")
+            break
+         case 8: 
+                alert("agosto")
+            break
+        case 9: 
+                alert("setembro")
+            break
+        case 10: 
+                alert("outubro")
+            break
+        case 11: 
+                alert("novembro")
+            break
+        case 12: 
+                alert("dezembro")
+            break
+        default : 
+                alert("1 a 12") } 
+         
+
+
+
+ 16) let turno = prompt("insira o turno em que voce estuda, utilize \nM para matutino, \nV para vespertino \n N para noturno")
+         switch (turno) {
+         case "V":
+            alert("boa tarde") 
+
+            break       
+         case "M": 
+                alert("bom dia") 
+            break
+         case "N": 
+                alert("boa noite")
+            break
+         default: 
+                alert("valor invalido") }
+
+ 17) let golstime1 = Number(prompt("insira os gols do primeiro time"))
+         let golstime2 = Number(prompt("insira os gols do time 2")) 
+         if (golstime1 == golstime2) alert("empate")
+         else if (golstime1 > golstime2) alert("vitoria do primeiro time")
+         else alert("vitória do time numero 2")
+
+ 18)    et idade = Number(prompt("insira sua idade"))
+         if (idade >= 18) alert("voto obrigatório")
+         else if (idade < 18 && idade >= 16) alert("voto opicional")
+         else alert("nao precisa votar")
+
+ 19 )   let numero1 = Number(prompt("insira um numero"))
+         let numero2 = Number(prompt("insira outro numero"))
+         let numero3 = Number(prompt("insira outro numero"))
+         if (numero1 > numero2 && numero2 > numero3) alert(numero1 + " " + numero2 + " " + numero3)
+         else if (numero1 < numero2 && numero2 < numero3) alert(numero3 + " " + numero2 + " " + numero1)
+         else if (numero1 > numero2 && numero1 > numero3 && numero3 > numero2) alert(numero1 + " " + numero3 + " " + numero2)
+         else if (numero1 > numero3 && numero1 < numero2) alert(numero2 + " " + numero1 + " " + numero3)
+         else if (numero1 < numero2 && numero3 > numero1) alert(numero2 + " " + numero3 + " " + numero1)
+         else alert(numero3 + " " + numero1 + " " + numero2)
+ 
+ 
+ 20) et idade = Number(prompt("insira sua idade"))
+         if (idade < 18 || idade > 67) alert("não pode doar sangue")
+         else alert("pode doar sangre")
 
