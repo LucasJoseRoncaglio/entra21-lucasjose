@@ -1,0 +1,60 @@
+1 )    let i = 0
+        while (i < 10) {
+           console.log("olá mundo")
+           i++ }
+
+        let i = 0
+         do {
+             console.log("olá mundo")
+             i++
+              }
+             while (i < 10)
+         
+         for (let i = 0; i < 10; i++) {
+            console.log("olá mundo")
+        }
+
+2 )     let contador = 0
+           let i = 0
+           while (i < 10) {
+               console.log("estou aparecendo pela " + ++contador + " vez") 
+               i++
+           }
+
+        let contador = 0
+           let i = 0
+           do { console.log("estou aparecendo pela " + ++contador + "vez") + i++ 
+           } while ( i < 10)
+           
+        let contador = 0
+            for (let i = 0; i < 10; i++) {
+               console.log("estou aparecendo pela " + ++contador + " vez")
+           }
+
+3 )     let contador = 10
+            for (let i = 10; i > 0; i--) {
+               console.log("estou aparecendo pela " + contador-- + " vez")
+           }
+
+4 ) for( let i =0; i < 3; i++) {
+                let numero1 = +prompt("insira um numero")
+                let numero2 = +prompt("insira um numero")
+                let subtração = numero1 - numero2
+                console.log(numero1 - numero2  + "=" + subtração)
+            }
+
+5 ) or( let i =0; i < 100001; i+=1000) {
+                console.log(i)
+
+            }
+
+6)let num1 = Number(prompt("digite um valor"))
+            let num2 = Number(prompt("digite um valor"))
+            let num3 = Number(prompt("digite um valor"))       
+            let num4 = Number(prompt("digite um valor"))
+            let num5 = Number(prompt("digite um valor"))
+            let soma = ( num1 + num2 + num3 + num4 + num5)
+            let media = (soma / 2)
+            alert ("soma = " + soma + "\n " + "media =" + media)
+
+7 )             
