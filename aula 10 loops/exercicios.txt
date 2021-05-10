@@ -57,4 +57,44 @@
             let media = (soma / 2)
             alert ("soma = " + soma + "\n " + "media =" + media)
 
-7 )             
+7 ) let numero = Number(prompt("insira um numero"))
+            for(i = 0; numero >= i; i++) 
+                if (i % 2 === 1) {
+                    console.log(i)
+             }
+8) let valor = (prompt("Digite um número"))
+
+
+            for ( i = 0; i < 11; i++) {
+            console.log(i * valor);l
+            }
+9) some = 0
+            for (i = 0; i<5; i++) {
+                let valor = Number(prompt("digite um numero"))
+                if (valor < 0) {
+                    (some += 1)
+                    continue
+                }
+                
+             }
+             
+            console.log(some)
+
+10)  impar = 0
+            par = 0
+            for (i = 0; i<10; i++) {
+                let valor = Number(prompt("digite um numero"))
+                if (valor % 2 == 1) {
+                    (impar += 1)
+                    
+                }else {
+                    (par += 1)
+                }
+               continue
+                
+             }
+             
+            console.log("impar " + impar + "\n" + "par " + par )
+    </script>               
+
+    11) 

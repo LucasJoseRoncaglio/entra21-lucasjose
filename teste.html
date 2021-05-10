@@ -7,11 +7,21 @@
 </head>
 <body>
     <script>
-            let numero = Number(prompt("insira um numero"))
-            for(i = 0; i < numero1; i++) {
+            impar = 0
+            par = 0
+            for (i = 0; i<10; i++) {
+                let valor = Number(prompt("digite um numero"))
+                if (valor % 2 == 1) {
+                    (impar += 1)
+                    
+                }else {
+                    (par += 1)
+                }
+               continue
                 
-            }
-    
+             }
+             
+            console.log("impar " + impar + "\n" + "par " + par )
     </script>
     
 </body>
@@ -20,44 +30,23 @@
 
 
 
-7) Faça um programa que receba um número N e mostre na tela todos os números ímpares de 0
-até N. (Faça o teste de mesa)
+
+
+
+
+
+
+
+
+11) Faça um script que receba valores inteiros e mostre na tela quantos desses valores recebidos estão no intervalo
+[10, 20] e quantos não estão. O programa irá parar de pedir números quando o usuário digitar um número negativo.
 Entrada:                Saída:
-5                      1, 3, 5
--------------------------------------
-8                      1, 3, 5, 7
-
-
-8) Crie um algoritmo que peça ao usuário um número e mostre na tela a tabuada (1 à 10) desse número.
-Entrada:                Saída:
-2                       2 x 1 = 2
-                        2 x 2 = 4
-                        2 x 3 = 6
-                        2 x 4 = 8
-                        2 x 5 = 10
-                        2 x 6 = 12
-                        2 x 7 = 14
-                        2 x 8 = 16
-                        2 x 9 = 18
-                        2 x 10 = 20
-
-
-9) Escreva um script que leia 5 valores do usuário e mostre quantos desses valores digitados são negativos.
-Entrada:                Saída:
-1                       2
--2
-3
--5
-4
-------------------------------
--2                      4
--7
+10                      3 números estão no intervalo
+12                      2 números estão fora do intervalo
+21
+32
+14
 -1
-2
--9
-
-
-
 
 
 
