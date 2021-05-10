@@ -97,4 +97,44 @@
             console.log("impar " + impar + "\n" + "par " + par )
     </script>               
 
-    11) 
+    11) let dentro = 0
+                let fora = 0
+            
+            for (i = 0; i<5; i++) {
+                let valor = Number(prompt("digite um numero"))
+                if (valor < 0) {
+                    break
+                    
+                }else if(valor <= 20 && valor >= 10) {
+                    (dentro += 1)
+                }
+                    else {fora += 1}
+            continue
+            }   
+                
+               
+                
+             
+             
+            console.log("dentro" + dentro + "\n" + "fora " + fora )
+
+ 12)   let soma = 0
+            let multi = 0
+                for (i = 0; i<5; i++) {
+                let valor = Number(prompt("digite um numero"))
+                if (valor < 0) {
+                    (soma += valor) && (multi + 1)
+                    break
+                    
+                }else if(valor > 0){
+                    (soma += valor) && (multi += 1)
+                    continue 
+                }}
+                    console.log(soma / multi)
+
+13) for(i = 0; i < 106; i+=7)
+             console.log(i)                            
+
+
+
+             14) 
