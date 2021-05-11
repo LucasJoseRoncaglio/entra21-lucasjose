@@ -1,30 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script>
-        let soma = 0
-        let vetor = []
-        for (i = 0; i < 4; i++) {
-            vetor[i] = +prompt("insira 10 numeros")
-         if (vetor[i] % 2 === 0) {
-            soma += 1
-        }}
-        console.log(soma)
-
-        
-    </script>
-    
-</body>
-</html>
-
-
-
 1) Leia um vetor de 10 posicões. Calcule e escreva quantos valores pares ele possui.
 
 2) Escreva um programa que leia 5 numeros e os armazene em um vetor. Mostre o vetor, o 
@@ -40,21 +13,6 @@ e assim por diante. Mostre os dois vetores.
 5) Ler um vetor com 5 nomes de pessoas, após pedir que o usuário digite um nome qualquer 
 de pessoa. Escrever a mensagem “ACHEI”, se o nome estiver armazenado no vetor de nomes ou 
 “NÃO ACHEI” caso contrário. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
