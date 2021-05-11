@@ -137,4 +137,14 @@
 
 
 
-             14) 
+             14) let res = 0
+        let res2 = 0
+        let fatorial = Number(prompt("insira um numero"))
+        for ( i = fatorial; i > 1; i--){
+            res = (fatorial *= (i-1))
+            
+        }
+        console.log(res)
+
+
+ 14)        
