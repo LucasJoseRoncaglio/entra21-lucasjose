@@ -8,20 +8,30 @@
 </head>
 <body>
     <script>
-        let grupo = []
-        let maior, menor
-        for (i = 0; i < 5; i++){
-        grupo[i] = +prompt("digite um valor")
-            if ( i === 0){
-                maior = grupo[i]
-                menor = grupo[i]
+            let temp = 0
+            let vetor = []
+            let vetorB = []
+            for (let i = 0; i < 5; i++) {
+                vetor[i] = +prompt("insira um numero")
             }
-            if (grupo[i] > maior){
-                maior = grupo[i]
-            }
+                for ( i = vetor.length - 1; i >= 0; i-- ){
+                    temp = vetor[i] ** 2
+                    vetorB.push(temp)
+                }
+        
+                
+
+                console.log("multiplicação = " + vetorB + "\n original = " + vetor )
             
-        }
-        console.log("maior valor " + maior + " na posição " + grupo[maior.lenght]  )
+        
+        
+            
+        
+            
+            
+            
+        
+        
 
     </script>
     
@@ -30,21 +40,27 @@
 
 
 
-1) Leia um vetor de 10 posicões. Calcule e escreva quantos valores pares ele possui.
 
-2) Escreva um programa que leia 5 numeros e os armazene em um vetor. Mostre o vetor, o 
-maior elemento e a posição que ele se encontra.
 
-3) Faça um programa que receba do usuario um vetor com 5 posições. Em seguida, mostre
-o maior e o menor elemento do vetor.
 
-4) Ler um vetor de 5 elementos. Crie um segundo vetor, com todos os elementos na ordem 
-inversa, ou seja, o último elemento passará a ser o primeiro, o penúltimo será o segundo 
-e assim por diante. Mostre os dois vetores. 
+7) Ler um conjunto de numeros, armazenando-os em vetor e calcular o quadrado dos
+componentes deste vetor, armazenando o resultado em outro vetor. Os conjuntos tem 5
+elementos cada. Imprimir todos os conjuntos.
 
-5) Ler um vetor com 5 nomes de pessoas, após pedir que o usuário digite um nome qualquer 
-de pessoa. Escrever a mensagem “ACHEI”, se o nome estiver armazenado no vetor de nomes ou 
-“NÃO ACHEI” caso contrário. 
+
+8) Crie um programa que leia 6 valores inteiros pares (GARANTA QUE ELES SEJAM PARES) e, em
+seguida, mostre na tela os valores lidos na ordem inversa.
+
+
+9) Faça um programa que leia um vetor de 8 posições e, em seguida, leia também dois
+valores X e Y quaisquer correspondentes a duas posições no vetor. Ao final seu programa
+deverá escrever a soma dos valores encontrados nas respectivas posições X e Y. Se o usuário
+digitar valores inválidas para X ou Y mostre uma mensagem de erro e peça novos valores até 
+que ambos os valores sejam válidos.
+
+
+10) Faça um programa que leia 10 números e preencha um vetor, calcule e
+mostre a quantidade de numeros negativos e a soma dos números positivos desse vetor.
 
 
 
