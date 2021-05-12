@@ -8,16 +8,21 @@
 </head>
 <body>
     <script>
-        let soma = 0
-        let vetor = []
-        for (i = 0; i < 4; i++) {
-            vetor[i] = +prompt("insira 10 numeros")
-         if (vetor[i] % 2 === 0) {
-            soma += 1
-        }}
-        console.log(soma)
+        let grupo = []
+        let maior, menor
+        for (i = 0; i < 5; i++){
+        grupo[i] = +prompt("digite um valor")
+            if ( i === 0){
+                maior = grupo[i]
+                menor = grupo[i]
+            }
+            if (grupo[i] > maior){
+                maior = grupo[i]
+            }
+            
+        }
+        console.log("maior valor " + maior + " na posição " + grupo[maior.lenght]  )
 
-        
     </script>
     
 </body>

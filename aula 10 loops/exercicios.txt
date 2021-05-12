@@ -156,4 +156,11 @@
         }
         console.log(res) 
 
-15)               
+15)   let soma = 0
+        let vetor = []
+        for (i = 0; i < 4; i++) {
+            vetor[i] = +prompt("insira 10 numeros")
+         if (vetor[i] % 2 === 0) {
+            soma += 1
+        }}
+        console.log(soma)             

@@ -16,6 +16,38 @@ de pessoa. Escrever a mensagem “ACHEI”, se o nome estiver armazenado no veto
 
 
 
+1)let soma = 0
+        let vetor = []
+        for (i = 0; i < 4; i++) {
+            vetor[i] = +prompt("insira 10 numeros")
+         if (vetor[i] % 2 === 0) {
+            soma += 1
+        }}
+        console.log(soma)             
 
+2)
+
+
+
+
+3)let grupo = []
+        let maior, menor
+        for (i = 0; i < 5; i++){
+        grupo[i] = +prompt("digite um valor")
+            if ( i === 0){
+                maior = grupo[i]
+                menor = grupo[i]
+            }
+            if (grupo[i] > maior){
+                maior = grupo[i]
+            }
+            if (grupo[i] < menor){
+                menor = grupo[i]
+            }
+        }
+        console.log(`Maior valor: ${maior}`)
+console.log(`Menor valor: ${menor}`)
+
+3)
 
 
