@@ -225,4 +225,22 @@ console.log(`Menor valor: ${menor}`)
 
                 console.log("multiplicação = " + vetorB + "\n original = " + vetor )
 
-8)
+8) let vetorB = []
+            let vetor = []
+            let quantidadepares = 0
+            
+                for (i = 0; quantidadepares < 6 ; i++){
+                    
+                    vetor[i] = +prompt("insira um numero")
+                    if (vetor[i] % 2 == 0)
+                        quantidadepares += 1
+                }
+                for ( i = vetor.length - 1; i >= 0; i--){
+                    vetorB.push(vetor[i])
+                } 
+                
+
+            
+                console.log( vetor + ", " + vetorB)
+            
+9 )             
