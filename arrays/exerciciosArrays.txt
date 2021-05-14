@@ -408,4 +408,18 @@ console.log(`Menor valor: ${menor}`)
             }    
                 console.log(vetor3)
 
-             16)     
+             16)     let vetor = []
+            let vetor2 = []
+            let maior = 0
+            let menor = 0
+            for ( let i = 0; i<2; i++) {
+                vetor[i] = +prompt("insira um valor")
+                if (i === 0){
+                    maior = vetor[i]
+                    menor = vetor[i]
+                } else if (vetor[i] < menor) {
+                    menor = vetor[i]
+                } else if (vetor[i] > maior) {
+                    maior = vetor[i]
+                }
+            }

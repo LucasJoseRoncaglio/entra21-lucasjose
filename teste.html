@@ -8,72 +8,50 @@
 </head>
 <body>
     <script>
-            "use strict"
-            let vetor = []
-            let vetor2 = []
-            let maior = 0
-            let menor = 0
-            for ( let i = 0; i<2; i++) {
-                vetor[i] = +prompt("insira um valor")
-                if (i === 0){
-                    maior = vetor[i]
-                    menor = vetor[i]
-                } else if (vetor[i] < menor) {
-                    menor = vetor[i]
-                } else if (vetor[i] > maior) {
-                    maior = vetor[i]
-                }
-            }
-
+            let nome
+            let matriz1 = []
+            for (let i = 0; i < 2; i++){
+                    nome = prompt("insira nome")    
+                 matriz1[i] = []
+                 matriz1[i].unshift(nome)
+                 for ( j = 0; j < 2; j++){                  
+                     matriz1[i][j] = prompt("digite as notas") 
+                }   
+            }  
             
-
+            console.log(matriz1)
 
     </script>
     
 </body>
 </html>
+6. Faça um script que leia o nome e as notas de 3 alunos e armazene essas informações em
+uma matriz no seguinte formato:
+João   10   9   8
+Maria  7    7   7   
+Pedro  8    8   8
 
+Após isso calcule a média de cada aluno e adicione a média na linha correspondente ao aluno
+da matriz:
+João   10   9   8   9
+Maria  5    5   5   5
+Pedro  8    8   8   8
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-16) Escreva um script que leia 2 números e crie um vetor que armazene os valores presentes 
-no intervalo entre os 2 números com o passo 2. Após isso, mostre na tela o vetor.
-Entrada:              Saída:
-1                     1
-10                    3
-                      5
-                      7
-                      9
------------------------------
-2                     2
-10                    4
-                      6
-                      8
-                      10
-
-
-17) Crie um script que armazene 10 números aleatórios dentro de um vetor (utilize a função Math.random()),
-ordene o vetor de forma crescente. (**NÃO UTILIZAR A FUNÇÃO SORT**)
-
+Ao final mostre a matriz no formato abaixo e informe a situação dos alunos ("Aprovado" se a média for maior ou igual a 6
+ou reprovado se for menor que 6).
+Entrada:                  Saída:
+João                      João   10   9   8   9  Aprovado
+10                        Maria  5    5   5   5  Reprovado
+9                         Pedro  8    8   8   8  Aprovado
+8                         
+Maria
+5
+5
+5
+Pedro
+8
+8
+8
 
 
 
