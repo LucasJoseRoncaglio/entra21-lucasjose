@@ -8,19 +8,30 @@
 </head>
 <body>
     <script>
+            let matriz = []
+            let soma = 0
+            let media = 0
             let nome
-            let matriz1 = []
-            for (let i = 0; i < 2; i++){
-                    nome = prompt("insira nome")    
-                 matriz1[i] = []
-                 matriz1[i].unshift(nome)
-                 for ( j = 0; j < 2; j++){                  
-                     matriz1[i][j] = prompt("digite as notas") 
-                }   
-            }  
-            
-            console.log(matriz1)
-
+            for (let i = 0; i < 3; i++) {
+                 
+                matriz[i] = []
+                
+              
+                for (let j = 0; j < 2; j++) {
+                  
+                    matriz[i][j] = +prompt("Digite a nota")     
+                    soma = ( matriz[0][0] + matriz[0][1]) / 2
+                      
+                }       
+                
+                nome = prompt("nome do aluno")
+                matriz[i].unshift(nome) 
+                matriz[i].push(soma)
+                if (soma >= 6){
+                    matriz[i].push(", aprovado ")
+                }else (matriz[i].push(`, reprovado`))
+                console.log(soma)
+            }
     </script>
     
 </body>
