@@ -8,67 +8,41 @@
 </head>
 <body>
     <script>
-            let matriz = []
-            let soma = 0
-            let media = 0
-            let nome
-            for (let i = 0; i < 3; i++) {
-                 
-                matriz[i] = []
-                
-              
-                for (let j = 0; j < 2; j++) {
-                  
-                    matriz[i][j] = +prompt("Digite a nota")     
-                    soma = ( matriz[0][0] + matriz[0][1]) / 2
-                      
-                }       
-                
-                nome = prompt("nome do aluno")
-                matriz[i].unshift(nome) 
-                matriz[i].push(soma)
-                if (soma >= 6){
-                    matriz[i].push(", aprovado ")
-                }else (matriz[i].push(`, reprovado`))
-                console.log(soma)
+        
+        function valorinteiro(valorin){
+            let contador = 0
+            for (i = 1; i <= valorin; i++){              
+                if (valorin % i == 0){
+                    contador++
+                }
             }
+                return contador
+        }
+        let numero = +prompt("insira um numero")
+        console.log(valorinteiro(numero))
+            
     </script>
     
 </body>
 </html>
-6. Faça um script que leia o nome e as notas de 3 alunos e armazene essas informações em
-uma matriz no seguinte formato:
-João   10   9   8
-Maria  7    7   7   
-Pedro  8    8   8
-
-Após isso calcule a média de cada aluno e adicione a média na linha correspondente ao aluno
-da matriz:
-João   10   9   8   9
-Maria  5    5   5   5
-Pedro  8    8   8   8
-
-Ao final mostre a matriz no formato abaixo e informe a situação dos alunos ("Aprovado" se a média for maior ou igual a 6
-ou reprovado se for menor que 6).
-Entrada:                  Saída:
-João                      João   10   9   8   9  Aprovado
-10                        Maria  5    5   5   5  Reprovado
-9                         Pedro  8    8   8   8  Aprovado
-8                         
-Maria
-5
-5
-5
-Pedro
-8
-8
-8
 
 
 
 
 
 
+
+
+
+
+9) Faça uma função que recebe, por parâmetro, um valor inteiro e positivo e retorna o número de divisores 
+desse valor.
+
+10) Faça uma função que receba um valor inteiro e positivo e calcule o seu fatorial.
+
+11) Faça uma função que verifique se um valor é perfeito ou não. Um valor é dito perfeito quando ele é igual a 
+soma dos seus divisores excetuando ele próprio. (Ex: 6 é perfeito, 6 = 1 + 2 + 3, que são seus divisores). 
+A função deve retornar um valor booleano. Receba um valor do usuário e mostre o resultado da função.
 
 
 
