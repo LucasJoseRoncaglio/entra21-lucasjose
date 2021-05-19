@@ -8,29 +8,34 @@
 </head>
 <body>
     <script>
-             
-            function fatorando(n){
-            for( i = n; i > 1; i--){             
-                 resultado =  n *= (i - 1)                                 
-            }           
-            return resultado 
-        }
-        let n = +prompt("Insira um numero")
-            console.log(fatorando(n))
+        "use strict"                
+        function parpar(vetor) {
+            let vetor2 = []
+            for (let i = 0; i < vetor.length; i++){                                 
+                if (vetor[i] % 2 === 0 && i % 2 === 0) {                         
+                    vetor2.push(vetor[i])
+                }            
+            }
+            return vetor2
+        } 
 
+        let vetor = []
+
+        for (let i = 0; i < 5; i++) {
+            vetor[i] = +prompt("insira numeros")
+        }
         
-        
+        console.log(parpar(vetor))
             
     </script>
     
 </body>
 </html>
+6) Elabore uma função que receba um vetor e retorne outro vetor que tenha todos os números que são pares e estão em
+índices pares do vetor.
 
 
-
-
-10) Faça uma função que receba um valor inteiro e positivo e calcule o seu fatorial.
-
-11) Faça uma função que verifique se um valor é perfeito ou não. Um valor é dito perfeito quando ele é igual a 
-soma dos seus divisores excetuando ele próprio. (Ex: 6 é perfeito, 6 = 1 + 2 + 3, que são seus divisores). 
-A função deve retornar um valor booleano. Receba um valor do usuário e mostre o resultado da função.
+7) Desenvolva uma função que receba como parâmetro um número de 1 a 10. Internamente, na função, será
+gerado um número aleatório de 1 a 10. A função deverá retornar se o parâmetro de entrada foi igual ao número
+sorteado internamente. Se o valor fornecido foi o sorteado, retorne "Parabéns! O número sorteado foi o X". Se
+não for igual, retorne "Que pena! O número sorteado foi o X". X é o número que foi sorteado.

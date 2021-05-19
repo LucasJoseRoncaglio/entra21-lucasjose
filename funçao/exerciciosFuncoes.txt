@@ -159,4 +159,29 @@ retorna as suas raízes, caso seja possível calcular. Peça os valores necessá
         let n = +prompt("Insira um numero")
             console.log(fatorando(n))
 
+            13) function baskara(a, b, c){
+                 let procedimento1 = (b ** 2) - (4 * a * c)
+                 if (procedimento1 < 0){
+                     return alert("numeros invalidos")
+                 }
+                 let procedimento2 = procedimento1 ** 0.5
+                 let resultado1 = ((- b) + procedimento2) / 2 * a  
+                 let resultado2 = ((- b) - procedimento2) / 2 * a  
+                 
+                 return [resultado1, resultado2]
+                 
+
+             }
+             let a
+             let b
+             let c
+             for ( let i = 0; i < 1; i ++){
+                  a = +prompt("insira o elemento a")
+                  b = +prompt("insira o elemento b")
+                  c = +prompt("insira o elemento c")     
+                                           
+             }
+             console.log(baskara(a, b, c))
+             
+
             
