@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,9 +8,15 @@
 </head>
 <body>
     <script>
-        function fatorando(n){
-            
+             
+            function fatorando(n){
+            for( i = n; i > 1; i--){             
+                 resultado =  n *= (i - 1)                                 
+            }           
+            return resultado 
         }
+        let n = +prompt("Insira um numero")
+            console.log(fatorando(n))
 
         
         
