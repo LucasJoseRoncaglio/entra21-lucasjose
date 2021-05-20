@@ -1,0 +1,71 @@
+Em um grupo de 3 pessoas:
+
+1)
+- Crie um repositório no github com o nome de "treinando-git".
+- Implemente o seguinte script em conjuto (branches):
+
+O script deve cadastrar três notas de um aluno e mostrar a média dessas notas.
+Para isso, o script deve implementar as seguintes funções:
+
+1) cadastrarNotas() -> Retorna um vetor com 3 notas
+2) calculaMedia(notas) -> Retorna a média de um vetor de notas
+3) mostraMedia(media) -> Mostrar a média (com arredondamento de duas casas decimais) em um alert.
+
+Ao final, faça o merge das três branches.
+
+2) Crie um segundo repositório "treinando-git2" e faça a mesma coisa que o exercício anterior utilizando o fork.
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------
+git config --global user.name "lucas jose roncaglio"
+git config --global user.email "lucas.roncaglio1710@gmail.com"
+
+git add .
+git commit -m "Commit Inicial"
+
+git branch -M main
+git remote add origin <url>
+git push -u origin main
+
+
+                              								----
+--------------------------------------------------------------------------------------------
+											----
+
+BRANCHES = >>>>
+git branch "nome da brench" para crias branch
+git checkout "nome da branch" para ir para a branch
+git log, copiar url e seguir proximo passo para resetar cagadas na brench teste
+git reset 688bdeab96f5c8051d1eacd9103271b08287d064 --hard
+
+
+achando o erro, para atrelar a main :   git push origin bug/1
+
+
+
+
+
+git branch** // Gerenciar novas linhas do tempo
+**git checkout** // Manipula as linhas do tempo
+**git reset** // Voltar para um ponto na linha do tempo
+**git merge** // Unir as linhas do tempo
+
+**fork** // Criar uma bifurcação de um repositório
+*Como usar:* https://docs.github.com/pt/github/getting-started-with-github/quickstart/fork-a-repo
+-----------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+-
