@@ -100,4 +100,41 @@ checarAnoBissexto(2100) // false
                 vetor1[i] = vetor[i]
             }  console.log(vetorDe5elementos(vetor) + "\n" + vetor1)  
         
-        6) 
+        6) function parpar(vetor) {
+            let vetor2 = []
+            for (let i = 0; i < vetor.length; i++){                                 
+                if (vetor[i] % 2 === 0 && i % 2 === 0) {                         
+                    vetor2.push(vetor[i])
+                }            
+            }
+            return vetor2
+        } 
+
+        let vetor = []
+
+        for (let i = 0; i < 5; i++) {
+            vetor[i] = +prompt("insira numeros")
+        }
+        
+        console.log(parpar(vetor))
+
+
+        7) let armazenar 
+        function numeroAleatorio(numero){                       
+                armazenar = Math.floor(Math.random() * (11))
+            if (armazenar == numero){
+                return alert("parabens o numero sorteado foi  " + numero )
+            }else alert("que pena   o numero SorTEAdo foi   " + armazenar)
+
+        }
+            let numero = +prompt("insira um numero")
+            numeroAleatorio(numero)
+
+
+      8 ) function ehbissexto(ano){
+            if (((ano % 100 == 0) && (ano % 400 == 0)) || (ano % 4 == 0)){
+            return alert("ano bissexto ehe")
+         } else return alert(" nao é bissexto ehe")
+        }
+        let ano = +prompt("Insira um numero")
+        ehbissexto(ano)      
