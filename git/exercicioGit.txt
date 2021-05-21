@@ -48,7 +48,19 @@ git reset 688bdeab96f5c8051d1eacd9103271b08287d064 --hard
 
 
 achando o erro, para atrelar a main :   git push origin bug/1
+					git branh -d bug/1     deletar branch
+					git branch    ver branch existentes
 
+
+
+
+
+-----------------------------------------------------------------------------------------------
+
+
+para fazer o fork, vá no  pool da pessoa, cliqu em fork e de um git clone em qlqr canto
+fork >>  git remote add upstream <url>    para adicionar url dentro do fork
+hard af boi
 
 
 
