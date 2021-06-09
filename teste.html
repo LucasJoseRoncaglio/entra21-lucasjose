@@ -20,7 +20,7 @@ oi
 
         body {
             text-align: center;
-            background-image: linear-gradient(to top right, rgba(106, 48, 122, 0.781), rgba(99, 6, 153, 0.979));
+            background-image: linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
         }
 
         .titulo {
@@ -41,13 +41,13 @@ oi
 
         nav {
             background-color: lightyellow;
-            margin-left: 165px;
-            margin-right: 165px;
-            border-radius: 4px;
+            margin-left: 190px;
+            margin-right: 190px;
+            padding: 25px;
         }
 
         main {
-            background-color: white;
+            background-image: linear-gradient(to bottom right, rgb(239, 232, 241), rgba(182, 164, 231, 0.63));
             width: 80%;
             margin: auto;
             box-sizing: border-box;
@@ -77,11 +77,11 @@ oi
         }
 
         .botao-saiba-mais {
-            margin-top: 40px;
-            display: inline-block;
-            padding: 10px 24px;
-            border: 1px solid grey;
-            border-radius: 5px;
+            text-decoration: none;
+            border: 1-+px solid white;
+            padding: 8px 32px;
+            border-radius: 15%;
+            color: white;
         }
 
         .imagem-direita {
@@ -108,6 +108,176 @@ oi
 
         .veroes {
             text-align: center;
+            font-size: 50px;
+        }
+
+        .agrupamento {
+            display: inline-block;
+        }
+
+        .icone {
+            width: 400px;
+            height: 400px;
+            float: left;
+            margin-left: 100px;
+            margin-right: 35px;
+        }
+
+        .figura {
+            width: 300px;
+            height: 300px;
+
+            border-radius: 50%;
+            background-color: whitesmoke;
+            box-shadow: 4px 4px black, -2px -2px black;
+        }
+
+        .texto2 {
+            overflow: unset;
+            font-size: 20px;
+            height: 130px;
+
+        }
+
+        .icone2 {
+            width: 400px;
+            height: 400px;
+            float: left;
+            margin-left: 25px;
+            margin-right: 35px;
+        }
+
+        .figura2 {
+            width: 300px;
+            height: 300px;
+
+            border-radius: 50%;
+            background-color: whitesmoke;
+            box-shadow: 4px 4px black, -2px -2px black;
+        }
+
+        .texto3 {
+            overflow: auto;
+            font-size: 20px;
+            height: 120px;
+
+        }
+
+        .icone3 {
+            width: 400px;
+            height: 400px;
+            float: left;
+            margin-left: 25px;
+
+        }
+
+        .figura3 {
+            width: 300px;
+            height: 300px;
+
+            border-radius: 50%;
+            background-color: whitesmoke;
+            box-shadow: 4px 4px black, -2px -2px black;
+
+        }
+
+        .texto4 {
+            overflow: auto;
+            font-size: 20px;
+            height: 120px;
+
+        }
+
+        .porque-nao-da-certo {
+            color: lightslategray;
+            font-size: 26px;
+            display: inline-block;
+            padding: 20px;
+        }
+
+        .terceiro-h2 {
+            text-align: center;
+            font-size: 50px;
+            margin-top: 100px;
+        }
+
+        .ipsum {
+            margin-top: 85px;
+            font-size: 25px;
+        }
+
+        ul {
+            margin-top: 10px;
+            text-align: center;
+            display: block;
+            background-color: linear;
+
+        }
+
+        .conteudo {
+            overflow: auto;
+            float: left;
+
+            width: 40%;
+            margin-left: 130px;
+            font-size: 25px;
+            margin-right: 20px;
+        }
+
+        .conteudo2 {
+            overflow: auto;
+
+            width: 40%;
+            font-size: 25px;
+            margin-left: 20px;
+        }
+
+        .pq-nao-funciona {
+            text-decoration: none;
+            border: 1px solid white;
+            padding: 8px 32px;
+            border-radius: 15%;
+            color: white;
+        }
+
+        .duas-colunas {
+            columns: 2;
+            column-gap: 40px;
+            text-align: justify;
+            font-size: 25px;
+        }
+
+        .titulo::after {
+            content: "";
+            display: block;
+            margin-top: 20px;
+            width: 100px;
+            height: 2px;
+            background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+        }
+
+        .titulo--center::after {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .vlwvlw {
+            padding: 100px;
+        }
+
+        .mudar {
+            font-size: 25px;
+
+        }
+        .starting{
+            background-color:white;
+            color: crimson;
+            border: 2px solid crimson;
+            border-radius: 25%;
+        }
+        .starting:hover{
+            background-color: aqua;
         }
     </style>
 </head>
@@ -135,11 +305,12 @@ oi
     <main>
         <section class="secoes clearfix">
             <div class="texto">
-                <h2>Ipsum sed adipiscing</h2>
+                <h2 class="titulo titulo--center">Ipsum sed adipiscing</h2>
                 Sed lorem ipsum dolor sit amet nullam <br>consequat feugiat consequat magna adipiscing magna
                 etiam amet veroeros. Lorem <br>ipsum dolor tempus sit cursus. Tempus nisl et nullam lorem ipsum dolor
                 sit
                 amet aliquam.
+                <br>
 
                 <a href="kapa" class="botao-saiba-mais">learn more</a>
             </div>
@@ -148,16 +319,73 @@ oi
             </div>
             <hr>
         </section>
-        <section>
+        <section class="clearfix">
             <h2 class="veroes">Magna veroeroeees</h2>
-            <div class="diamante1">
-                Ipsum consequat
-                Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.
-                <img src="diamond-icon.png" alt="diamante">
-
+            <br>
+            <br>
+            <br>
+            <div class=icone>
+                <img class="figura" src="diamond-icon.png" alt="diamante">
+                <p class="texto2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem placeat tenetur itaque
+                    nesciunt ipsam. Dolore voluptate aliquam laborum nulla id ex vitae, voluptatum necessitatibus
+                    pariatur ipsum, neque repellat at quis?</p>
             </div>
+            <div class="icone2">
+                <img class="figura2" src="diamond-icon.png" alt="diamante">
+                <p class="texto3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla mollitia quisquam saepe
+                    hic aliquid. Pariatur earum culpa atque, id labore corrupti perspiciatis odit totam doloribus quam
+                    quisquam commodi ea tenetur.</p>
+            </div>
+            <div class="icone3">
+                <img class="figura3" src="diamond-icon.png" alt="diamante">
+                <p class="texto4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla mollitia quisquam saepe
+                    hic aliquid. Pariatur earum culpa atque, id labore corrupti perspiciatis odit totam doloribus quam
+                    quisquam commodi ea tenetur.</p>
+            </div>
+            <div>
+                <p>
+                    <a class="porque-nao-da-certo" href="kapa">learnmore</a>
+                </p>
+            </div>
+            <hr>
         </section>
+        <section class="vlwvlw">
+            <h2 class="terceiro-h2">Ipsum consequat</h2>
+            <p class="ipsum">Donec imperdiet consequat consequat. Suspendisse <br>feugiat congue
+                posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+            <ul>
+                <li><img src="lista2.png"></li>
+            </ul>
+            <br><BR>
+            <p class="duas-colunas">
+                Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus
+                hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus.
+                Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed
+                eleifend a enim pulvinar.
+
+                Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus
+                hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus.
+                Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed
+                eleifend a enim pulvinar
+            </p>
+            <br><BR>
+            <a class="pq-nao-funciona" href="kapa">learn more</a>
+            <hr>
+        </section>
+        <section>
+            <h2 class="terceiro-h2">Congue imperdiet</h2>
+            <br><br>
+            <P class="Mudar">Donec imperdiet consequat consequat. Suspendisse feugiat <br>congue
+                posuere. Nulla massa urna, fermentum eget quam aliquet.</P>
+            <br><br>
+            <div>
+                <a class="starting"href="kapa">get started</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a class="learning"
+                    href="kapa">learn more</a>
+            </div>
+            <br><br><br>
+        </section>        
     </main>
+    <br><BR><br><BR><br><BR><br><BR><br><BR><br><BR><br><BR><br><BR><br><BR><br><BR><br><BR>
 </body>
 
 </html>
