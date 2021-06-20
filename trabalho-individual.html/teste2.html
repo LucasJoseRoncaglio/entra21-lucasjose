@@ -1,83 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOW</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmoothTravel</title>
+  <link rel="stylesheet" type="text/css" href="teste2.css">
 </head>
-<style>
-    *{
-        margin: 0px;
-        box-sizing: border-box;
-    }
 
-    .bloco-pompeia{
-        display: flex;
-        position: relative;
-        align-items: center;
-        border: 2px solid black;
-        width: 100%;
-    }
-    .flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 200px;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px; 
-  margin: auto;
-}
-
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; 
-  backface-visibility: hidden;
-}
-
-
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
-}
-
-
-.flip-card-back {
-  background-color: dodgerblue;
-  color: white;
-  transform: rotateY(180deg);
-}
-
-</style>
 <body>
-    <div class="bloco-pompeia">
-        <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="Pompeia-do-alto.jpg" alt="Avatar" style="width:300px;height:200px;">
-              </div>
-              <div class="flip-card-back">
-                <img src="Rolwaling-scaled.jpg" alt="Avatar" style="width:300px;height:200px;">
-              </div>
-            </div>
-          </div> 
-
+  <div class="imagem-a-direita">
+    <div class="imagem">
+      <div>
+        <h1 class="titulo">Postcards Pisa</h1>
+      </div>
+      <div><img src="imagen//pisa.jpg"><img src="imagen//pisa-3.jpg"></div>
+      <div><img class="bottom" src="imagen//pisa2.jpg"></div>
     </div>
+  </div>
+  <br>
+
+  <div class="imagem">
+    <div>
+      <h1 class="titulo">howling-valley</h1>
+    </div>
+    <div><img src="imagen//howling.jpg"><img src="imagen//howling2.jpg"></div>
+    <div><img class="bottom" src="imagen//howling3.jpg"></div>
+  </div>
+  <br>
+  <div class="imagem-a-direita">
+    <div class="imagem">
+      <div>
+        <h1 class="titulo">Postcards Rome</h1>
+      </div>
+      <div><img src="imagen//rome3.jpg"><img src="imagen//rome2.jpg"></div>
+      <div><img class="bottom" src="imagen//rome.jpg"></div>
+    </div>
+  </div>
+  <br>
+  <div class="imagem">
+    <div>
+      <h1 class="titulo">Postcards Pompeii</h1>
+    </div>
+    <div><img src="imagen//pompeia3.jpg"><img src="imagen//pompeia2.jpg"></div>
+    <div><img class="bottom" src="imagen//Pompeia-do-alto.jpg"></div>
+  </div>
+
+  <br>
+ <div class="trolando">
+  <div class="imagem">
+    <div>
+      <h1 class="titulo">Postcards naples</h1>
+    </div>
+    <div><img src="imagen//naples.jpg"><img src="imagen//nap3.jpg"></div>
+    <div><img class="bottom" src="imagen//nap2.jpg"></div>
+  </div>
+  </div>
+</div>
+  <br>
+  <div class="itens-de-viagem">
+    <P><strong>You may find useful to take with you:</strong></P>
+
+    <br>
+    <div class="clearfix">
+      <div class="dropdown">
+        <P>ThootBRUSH |</P>
+        <div class="dropdown-content">
+          <p>Amazon: 25 doleta</p>
+          <p>Netflix: 15 yen</p>
+          <P>Nordeste: seca</P>
+        </div>
+
+      </div>
+      <div class="dropdown">
+        <P>Jacket |</P>
+        <div class="dropdown-content">
+          <p>Agostinho carrara</p>
+          <P>Bakery: 10reais</P>
+          <P>Albion: 15silver</P>
+        </div>
+
+      </div>
+      <div class="dropdown">
+        <P>UnderWear |</P>
+        <div class="dropdown-content">
+          <p>Americanas: 2 reais</p>
+          <P>Wallmart: 5dol</P>
+          <P>DrogariaCatarinense: null</P>
+        </div>
+
+      </div>
+      <div class="dropdown">
+        <P>FaceMask</P>
+        <div class="dropdown-content">
+          <p>Can be bought</p>
+          <P>everywhere</P>
+          <P>for an avarege price</P>
+          <P>of 5 reais</P>
+        </div>
+
+      </div>
+    </div>
+    <br><br><br><br>
+    <div id="rodape">
+      <h4>ALL RIGHTS RESERVED</h4>
+      <br><br><br>
+    </div>
+
+
+
+
+
 </body>
+
 </html>
