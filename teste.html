@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+    }
+
+    pre {
+        display: inline-block;
+        margin: 0;        
+        position: fixed;
+    }
+
+    pre:focus {
+        outline: 1px dotted black;
+    }
+</style>
+
+<body>
+    <pre tabindex="0">
+        . . . . . . . . . . . . . . . . . . . ________
+        . . . . . .. . . . . . . . . . . ,.-‘”. . . . . . . . . .``~.,
+        . . . . . . . .. . . . . .,.-”. . . . . . . . . . . . . . . . . .“-.,
+        . . . . .. . . . . . ..,/. . . . . . . . . . . . . . . . . . . . . . . ”:,
+        . . . . . . . .. .,?. . . . . . . . . . . . . . . . . . . . . . . . . . .\,
+        . . . . . . . . . /. . . . . . . . . . . . . . . . . . . . . . . . . . . . ,}
+        . . . . . . . . ./. . . . . . . . . . . . . . . . . . . . . . . . . . ,:`^`.}
+        . . . . . . . ./. . . . . . . . . . . . . . . . . . . . . . . . . ,:”. . . ./
+        . . . . . . .?. . . __. . . . . . . . . . . . . . . . . . . . :`. . . ./
+        . . . . . . . /__.(. . .“~-,_. . . . . . . . . . . . . . ,:`. . . .. ./
+        . . . . . . /(_. . ”~,_. . . ..“~,_. . . . . . . . . .,:`. . . . _/
+        . . . .. .{.._$;_. . .”=,_. . . .“-,_. . . ,.-~-,}, .~”; /. .. .}
+        . . .. . .((. . .*~_. . . .”=-._. . .“;,,./`. . /” . . . ./. .. ../
+        . . . .. . .\`~,. . ..“~.,. . . . . . . . . ..`. . .}. . . . . . ../
+        . . . . . .(. ..`=-,,. . . .`. . . . . . . . . . . ..(. . . ;_,,-”
+        . . . . . ../.`~,. . ..`-.. . . . . . . . . . . . . . ..\. . /\
+        . . . . . . \`~.*-,. . . . . . . . . . . . . . . . . ..|,./.....\,__
+        ,,_. . . . . }.>-._\. . . . . . . . . . . . . . . . . .|. . . . . . ..`=~-,
+        . .. `=~-,_\_. . . `\,. . . . . . . . . . . . . . . . .\
+        . . . . . . . . . .`=~-,,.\,. . . . . . . . . . . . . . . .\
+        . . . . . . . . . . . . . . . . `:,, . . . . . . . . . . . . . `\. . . . . . ..__
+        . . . . . . . . . . . . . . . . . . .`=-,. . . . . . . . . .,%`>--==``
+        . . . . . . . . . . . . . . . . . . . . _\. . . . . ._,-%. . . ..`\
+    </pre>
+    
+
+
+    <script>
+        let rato = document.querySelector("pre")    
+        rato.addEventListener("click", () => {
+            rato.focus()            
+            rato.style.left = rato.getBoundingClientRect().left
+            rato.style.top = rato.getBoundingClientRect().top
+        })
+        rato.addEventListener("keydown", (e) => {
+            console.log(e.key)
+            switch (e.key) {
+                case "ArrowRight": 
+                    rato.style.left = parseInt(rato.style.left) + rato.clientWidth + "px"
+                    break
+                case "ArrowUp":
+                     rato.style.top = parseInt(rato.style.top) - rato.clientWidth + "px"
+                    break
+                case "ArrowDown":
+                rato.style.top = parseInt(rato.style.top) + rato.clientWidth + "px"
+                    break
+                case "ArrowLeft":
+                rato.style.left = parseInt(rato.style.left) - rato.clientWidth + "px"
+                    break
+            }
+        })
+    </script>
+</body>
+</html>
