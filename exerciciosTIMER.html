@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="time"  id="timer">
+    <script>
+        let tempoTimer = document.querySelector("#timer")        
+    </script>
+</body>
+
+</html>
+
+1) Escreva a função imprimeNumeros(comeco, fim) que mostre um número a cada segundo, começando
+do comeco até o fim.
+
+let inicio = 1
+let fim = 5
+let idSetInterval = setInterval(() => {
+imprimeNumeros()
+}, 1000)
+
+function imprimeNumeros() {
+console.log(inicio)
+inicio++
+if (inicio >= fim) clearInterval(idSetInterval)
+}
+
+
+2) Utilizando setInterval faça um relógio que obtenha o horário atual
+e faça ele aparecer na tela no formato: 
+hh:mm:ss
+
+function horaAtual() {
+    let novo = new Date()
+    let novo2 = novo.toLocaleTimeString()
+    return novo2      
+    document.getElementById("relogio").innerHTML = hora;
+}
+setInterval(() => console.log(horaAtual()), 1000)
+
+3) Faça uma cronômetro através da função criaCronometro(tempo, callback) que receba o valor inicial através de um <input type="time"> 
+e dispare uma função callback quando o tempo acabar.
+*/
