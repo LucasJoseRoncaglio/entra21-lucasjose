@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        
+ class Agenda {
+        constructor() {
+            this.listaPessoas = []
+        }
+
+        adicionarPessoa(nome, telefone) {
+            if ( Agenda.length < 11){
+            this.listaPessoas.push({nome, telefone})
+        }
+        }
+        listarPessoas() {
+            for (let pessoa of this.listaPessoas) {
+                console.log(`Nome: ${pessoa.nome}`)
+            }
+        }
+    }
+    let agenda = new Agenda()
+    agenda.adicionarPessoa("João", "(47) 9 9999-9999")
+
+    </script>
+
+</body>
+
+</html>
+1) Escreva a classe Aluno. Cada objeto dessa classe deve guardar os seguintes dados:
+- matrícula,
+- nome
+- 2 notas de prova
+- 1 nota de trabalho
+
+Essa classe deve ter 2 métodos:
+- media: calcula a média final do aluno (cada prova tem peso 3 e o trabalho tem peso 2)
+- final: calcula quanto o aluno precisa para a prova final (retorna zero se ele não for para a final)
+
+
+class Aluno {
+    constructor(matricula, nome, nota1, nota2, trabalho) {
+        this.matricula = matricula
+        this.nome = nome
+        this.nota1 = nota1
+        this.nota2 = nota2
+        this.trabalho = trabalho   
+    }
+        calculaMedia() {
+        let media = (this.nota1 + this.nota2) / 3.3
+        let mediaTrabalho = this.trabalho / 5
+        let mediaGeral = media + mediaTrabalho
+        return mediaGeral
+    }
+
+    IsPassei()  {   
+        let mediaGeral = this.calculaMedia()   
+        let quantoFalta = (6 - mediaGeral) * 5
+        if (mediaGeral >= 6) {
+            return "passou"
+        }
+        else if (mediaGeral < 4){
+            return "wasted"
+        }
+        else {
+            return quantoFalta
+        } 
+    }   
+}
+
+let aluno = new Aluno(123, "A", 4, 4, 4)
+console.log(aluno.calculaMedia())
+console.log(aluno.IsPassei())
+
+
+2) Crie uma classe Agenda que pode armazenar 10 pessoas e que seja capaz de realizar as
+seguintes operações:
+- armazenaPessoa(nome, telefone)
+- removePessoa(nome)
+- buscaPessoa(nome) -> Informa o número de telefone da pessoa
+- imprimeAgenda() -> Imprime os dados de todas as pessoas da agenda
+- imprimePessoa(indice) -> Imprime os dados da pessoa que está na posição "i" da agenda
+
+
+    class Agenda {
+        constructor() {
+            this.listaPessoas = []
+        }
+
+        adicionarPessoa(nome, telefone) {
+            if ( Agenda.length < 11){
+            this.listaPessoas.push({nome, telefone})
+        }
+        }
+        listarPessoas() {
+            for (let pessoa of this.listaPessoas) {
+                console.log(`Nome: ${pessoa.nome}`)
+            }
+        }
+    }
+    let agenda = new Agenda()
+    agenda.adicionarPessoa("João", "(47) 9 9999-9999")
+
+
+    3) Escreva um classe Voo. Cada vôo possui no máximo 100 passageiros, e a classe permite controlar a 
+    ocupação das vagas. A classe deve ter os seguintes métodos:
+
+    - constructor: número do vôo, data
+    - proximoLivre: retorna o número da próxima cadeira livre
+    - verifica: verifica se o número da cadeira recebido como parâmetro está ocupada
+    - ocupa: ocupa determinada cadeira do vôo, cujo número é recebido como parâmetro,
+    retorna verdadeiro se a cadeira ainda não estiver ocupada e falso caso contrário.
+    - vagas: retorna o número de cadeiras vagas (não ocupadas) disponíveis no vôo.
+    - getVoo: retorna o número do vôo
+    */
