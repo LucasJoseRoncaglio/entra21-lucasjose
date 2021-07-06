@@ -1,0 +1,132 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+ </head>
+ <body>
+     <script>
+           hamster = {
+                estomago : [],                
+                comer(comida) {
+                this.estomago.push(comida)
+            }
+            
+        }
+
+        let hamtaro = {
+            __proto__:hamster,
+             estomago : []
+
+            }
+
+        let fofuxo = {
+            __proto__:hamster,
+            estomago : []
+        }
+        hamtaro.comer("Maçã")
+
+        console.log(hamtaro.estomago) // Maça
+
+        console.log(fofuxo.estomago) // Maçã
+        
+     </script>
+
+     
+ </body>
+ </html>
+
+
+ 2) Dado os seguintes objetos:
+
+        let cabeca = {
+            oculos: 1
+        }
+
+        let mesa = {
+            caneta: 3
+        }
+
+        let cama = {
+            lenco: 1,
+            travesseiro: 2
+        }
+
+        let bolso = {
+            dinheiro: 200
+        }
+
+        - Use __proto__ para atribuir prototypes na seguinte ordem: bolso -> cama -> mesa -> cabeca.
+        Testes:
+        console.log(bolso.caneta) // 3
+        console.log(cama.oculos) // 1
+        console.log(mesa.dinheiro) // undefined
+
+        let cabeca = {
+            oculos: 1
+        }
+        let mesa = {
+            __proto__:cabeca,
+            caneta: 3
+        }
+        let cama = {
+            __proto__:mesa,
+            lenco: 1,
+            travesseiro: 2
+        }
+        let bolso = {
+            __proto__:cama,
+            dinheiro: 200
+        }
+        ------------------------------------------------------------------------------------------
+
+        3) Nesse problema temos dois hamster: Hamtaro e Fofuxo. Os dois herdam do objeto hamster.
+        Quando alimentamos um deles, o outro também fica cheio. Por que? Como consertar isso?
+        let hamster = {
+            estomago = [],
+
+            comer(comida) {
+                this.estomago.push(comida)
+            }
+        }
+
+        let hamtaro = {
+            __proto__ = hamster
+        }
+
+        let fofuxo = {
+            __proto__ = hamster
+        }
+
+        hamtaro.comer("Maçã")
+        console.log(hamtaro.estomago) // Maçã
+
+        console.log(fofuxo.estomago) // Maçã
+        */
+
+        hamster = {
+            estomago : [],                
+            comer(comida) {
+            this.estomago.push(comida)
+        }
+        
+    }
+
+    let hamtaro = {
+        __proto__:hamster,
+         estomago : []
+
+        }
+
+    let fofuxo = {
+        __proto__:hamster,
+        estomago : []
+    }
+    hamtaro.comer("Maçã")
+
+    console.log(hamtaro.estomago) // Maça
+
+    console.log(fofuxo.estomago) // Maçã
+
+    --------------------------------------------------------------------------------------------------
