@@ -11,32 +11,40 @@
 <body>
     <div id="carta">
         <div class="carta">
-            <div class="header">
-                <div class="name">Serra Angel</div>
-                <div class="mana">(x)(x)(x)</div>
+            <div class="front">
+                <div class="header">
+                    <div class="name">Serra Angel</div>
+                    <div class="mana">(x)(x)(x)</div>
+                </div>
+                <img src="angel.png">
+                <div class="footer">
+                    <div class="type">Creature -- Angel</div>
+                    <div class="x">(Y)</div>
+                </div>
+                <div class="description">
+                    <h2>Flying, Vigilance</h2>
+                    <p>ratione dolor ipsum quasi
+                        doloribus fugiat eius culpa
+                        doloribus fuglta eisu coalp
+                        kulotim dolor ipsum
+                        doloribus fuglta eisu coalp
+                        kulotim dolor ipsum
+                        doloribus fuglta eisu coalp
+                        kulotim dolor ipsum </p>
+                </div>
+
             </div>
-            <img src="angel.png">
-            <div class="footer">
-                <div class="type">Creature -- Angel</div>
-                <div class="x">(Y)</div>
-            </div>
-            <div class="description">
-                <h2>Flying, Vigilance</h2>
-                <p>ratione dolor ipsum quasi 
-                doloribus fugiat eius culpa
-                doloribus fuglta eisu coalp
-                kulotim dolor ipsum 
-                doloribus fuglta eisu coalp
-                kulotim dolor ipsum 
-                doloribus fuglta eisu coalp
-                kulotim dolor ipsum </p>
-            </div>
+            <div class="stats">stats</div>
+            <div class="back"></div>
+
+            
         </div>
     </div>
     <input class="nome" type="text"><br>
     <input class="energia" type="text"><br>
     <input class="tipo" type="text"><br>
     <input class="texto" type="text"><br>
+    <input class="stattus" type="range"><br>
     <input class="submit" type="submit">
 
     <script>
@@ -45,20 +53,25 @@
             tipo = document.querySelector(".tipo"),
             texto = document.querySelector(".texto"),
             submit = document.querySelector(".submit"),
-            name = document.querySelector(".name"),
+            stattus = document.querySelector(".stattus")
+
+        name = document.querySelector(".name"),
             mana = document.querySelector(".mana"),
             type = document.querySelector(".type"),
             description = document.querySelector(".description")
+        stats = document.querySelector(".stats")
 
-            submit.addEventListener("click", event => {
-                name.innerHTML = nome.value || name.innerHTML
-                mana.innerHTML = ""
-                for (let i = 0; i < energia.value; i++) {
-                    mana.innerHTML += "(x)"
-                }
-                type.innerHTML = tipo.value || type.innerHTML
-                description.innerHTML = texto.value || description.innerHTML
-            })
+
+        submit.addEventListener("click", event => {
+            name.innerHTML = nome.value || name.innerHTML
+            mana.innerHTML = ""
+            for (let i = 0; i < energia.value; i++) {
+                mana.innerHTML += "(x)"
+            }
+            type.innerHTML = tipo.value || type.innerHTML
+            description.innerHTML = texto.value || description.innerHTML
+            stats.innerHTML = stattus.value || stats.innerHTML
+        })
     </script>
 </body>
 

@@ -20,6 +20,23 @@ img{
     background-image: url(papiro-png-1.png);
     background-repeat: no-repeat;
     background-size: 100%;
+    position: relative;
+    perspective: 500;
+    position: relative;
+}   
+
+.stats{
+    position: relative;
+    padding: 1px;
+    text-align: center;
+    width: 20%;
+    align-self: flex-end;
+    border: 1px solid black;
+    margin: -10px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    border-radius: 4px;
+    background-image: url(papiro-white-298x60.jpg);
 }
 
 .header {
@@ -67,7 +84,7 @@ p{
  padding-right: 10px;
 }
 .description {
-    
+    height: 200px;
     text-align: justify;
     flex-direction: column;
     display: flex;

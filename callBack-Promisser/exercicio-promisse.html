@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        function somar(n1, n2, cb) {
+            setTimeout(() => {
+                const soma = n1 + n2;
+
+                if (soma % 2 === 0) {
+                    cb(null, soma);
+                } else {
+                    cb(new Error("O valor é ímpar"));
+                }
+            }, 2000);
+        }
+
+        function mostrarResultado(error, result) {
+            if (error) {
+                return console.log(`A operação falhou! ${error.message}`);
+            } 
+            console.log(`A operação foi bem sucedida! O número ${result} é par`);
+        }
+
+        somar(11, 10, mostrarResultado);
+    </script>
+
+<script>
+    
+</script>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+2) Crie uma função dobrarEm5Segundos(numero, cb) que dobre o valor de um número após 5 segundos. Se o valor recebido não for um número
+ele irá chamar a cb passando um erro. 
+
+callback(error, result) => Se um erro for passado irá mostrar a mensagem: "A operação falhou! [mensagem do erro]".
+Senão, irá mostrar a mensagem: "A operação foi bem sucedida! O resultado é [result]".
+*/
