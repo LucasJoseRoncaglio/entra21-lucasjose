@@ -1,0 +1,3 @@
+{"freeMemory":"2917 MB","totalMemory":"8071 MB","usage":"36 %"}
+{"freeMemory":"2887 MB","totalMemory":"8071 MB","usage":"35 %"}
+{"freeMemory":"2869 MB","totalMemory":"8071 MB","usage":"35 %"}
